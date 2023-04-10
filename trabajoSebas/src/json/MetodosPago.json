@@ -1,0 +1,72 @@
+{
+  "nombreBanco": ["Mercado", "Si Vale", "Citibanamex", "Visa"],
+  "meses": 12,
+  "tipoTarjeta": ["Debito", "Credito"],
+  "nuevaTarjeta": ["Nueva tarjeta de Credito", "Nueva tarjeta de Debito"],
+  "intereses": [3, 6],
+  "formaPago": ["Transferencia electronica", "Efectivo en puntos de pago"],
+  "TiendasParticipantes": "Santander, HSBC, 7-Eleven, Soriana, Circle K y otros",
+  "cantidadProducto": 2,
+  "totalProductos": 424,
+  "costoEnvio": 192,
+  "totalPago": 616,
+  "cupon": "Ingresar cupon de descuento",
+  "renglones": [
+    {
+      "id": 1,
+      "icono": "../assets/ico1.svg",
+      "tipoPago": "Mercado credito",
+      "numeroTarjeta": "",
+      "leyenda": "hasta 12 mensualidades sin usar tarjeta"
+    },
+    {
+      "id": 2,
+      "icono": "../assets/img/ico2.svg",
+      "tipoPago": "Si Vale debito",
+      "numeroTarjeta": "****8208",
+      "leyenda": ""
+    },
+    {
+      "id": 3,
+      "icono": "../assets/img/ico3.svg",
+      "tipoPago": "Citibanamex",
+      "numeroTarjeta": "****4493",
+      "leyenda": "Hasta 3 meses sin intereses"
+    },
+    {
+      "id": 4,
+      "icono": "../assets/img/ico4.svg",
+      "tipoPago": "Visa",
+      "numeroTarjeta": "****8015",
+      "leyenda": "Hasta 3 meses sin intereses"
+    },
+    {
+      "id": 5,
+      "icono": "../assets/img/ico5.svg",
+      "tipoPago": "Nueva tarjeta de crédito",
+      "numeroTarjeta": "",
+      "leyenda": "Hasta 6 meses sin intereses"
+    },
+    {
+      "id": 6,
+      "icono": "../assets/img/ico6.svg",
+      "tipoPago": "Nueva tarjeta de debito",
+      "numeroTarjeta": "",
+      "leyenda": ""
+    }
+  ],
+  "otrasFormas": [
+    {
+      "id": 7,
+      "icono": "../assets/img/ico7.svg",
+      "tipoPago": "Transferencia electronica",
+      "leyenda": ""
+    },
+    {
+      "id": 8,
+      "icono": "../assets/img/ico8.svg",
+      "tipoPago": "Efectivo en puntos de pago",
+      "leyenda": "Santander, HSBC, 7-Eleven, Soriana, Circle K y otros"
+    }
+  ]
+}
