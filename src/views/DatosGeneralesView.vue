@@ -2,114 +2,92 @@
   <div>
     <NavComponent />
     <h1>
-      Datos Personales<i
-        class="fa-solid fa-circle-question fs-3 mx-1"
-        style="color: #1d43f2"
-      ></i>
+      Datos Personales
+      <i class="fas fa-question-circle" style="color: #1d43f2"></i>
     </h1>
-    <div class="bodi">
+    <div class="body">
       <form class="row g-3">
-        <div class="col-4">
-          <label for="inputEmail4" class="form-label"
-            >Nombre<i class="fa-solid fa-pen mx-2" style="color: #1d43f2"></i
-          ></label>
-          <input type="text" class="form-control" id="inputEmail4" />
+        <div class="col-md-4">
+          <label for="inputName" class="form-label">
+            Nombre
+            <i class="fas fa-pen" style="color: #1d43f2"></i>
+          </label>
+          <input type="text" class="form-control" id="inputName" required />
         </div>
-        <div class="col-4">
-          <label for="inputPassword4" class="form-label"
-            >Apellido Paterno<i
-              class="fa-solid fa-pen mx-2"
-              style="color: #1d43f2"
-            ></i
-          ></label>
-          <input type="text" class="form-control" id="inputPassword4" />
+        <div class="col-md-4">
+          <label for="inputLastName1" class="form-label">
+            Apellido Paterno
+            <i class="fas fa-pen" style="color: #1d43f2"></i>
+          </label>
+          <input type="text" class="form-control" id="inputLastName1" required />
         </div>
-        <div class="col-4">
-          <label for="inputPassword4" class="form-label"
-            >Apellido Materno<i
-              class="fa-solid fa-pen mx-2"
-              style="color: #1d43f2"
-            ></i
-          ></label>
-          <input type="text" class="form-control" id="inputPassword4" />
+        <div class="col-md-4">
+          <label for="inputLastName2" class="form-label">
+            Apellido Materno
+            <i class="fas fa-pen" style="color: #1d43f2"></i>
+          </label>
+          <input type="text" class="form-control" id="inputLastName2" required />
         </div>
-        <div class="col-6 mt-4">
-          <label for="inputPassword4" class="form-label"
-            >Telefono Personal<i
-              class="fa-solid fa-phone mx-2"
-              style="color: #1d43f2"
-            ></i
-          ></label>
-          <input type="text" class="form-control" id="inputPassword4" />
+        <div class="col-md-6">
+          <label for="inputPhone" class="form-label">
+            Teléfono Personal
+            <i class="fas fa-phone" style="color: #1d43f2"></i>
+          </label>
+          <input type="tel" class="form-control" id="inputPhone" required />
         </div>
-        <div class="col-6 mt-4">
-          <label for="inputPassword4" class="form-label"
-            >Correo Personal<i
-              class="fa-regular fa-at mx-2"
-              style="color: #1d43f2"
-            ></i
-          ></label>
-          <input type="text" class="form-control" id="inputPassword4" />
+        <div class="col-md-6">
+          <label for="inputEmail" class="form-label">
+            Correo Personal
+            <i class="fas fa-at" style="color: #1d43f2"></i>
+          </label>
+          <input type="email" class="form-control" id="inputEmail" required />
         </div>
-
-        <div class="col-4">
-          <label for="inputAddress2" class="form-label"
-            >Fecha de nacimiento<i
-              class="fa-solid fa-calendar-days mx-2"
-              style="color: #1d43f2"
-            ></i
-          ></label>
-          <input
-            type="text"
-            class="form-control"
-            id="inputAddress2"
-            placeholder="12 enero 1987"
-          />
+        <div class="col-md-4">
+          <label for="inputBirthdate" class="form-label">
+            Fecha de Nacimiento
+            <i class="fas fa-calendar-day" style="color: #1d43f2"></i>
+          </label>
+          <input type="date" class="form-control" id="inputBirthdate" required />
         </div>
-        <div class="col-4">
-          <label for="inputCity" class="form-label"
-            >Estado<i
-              class="fa-solid fa-map-pin mx-2"
-              style="color: #1d43f2"
-            ></i
-          ></label>
-          <input type="text" class="form-control" id="inputCity" />
+        <div class="col-md-4">
+          <label for="inputState" class="form-label">
+            Estado
+            <i class="fas fa-map-pin" style="color: #1d43f2"></i>
+          </label>
+          <input type="text" class="form-control" id="inputState" required />
         </div>
-        <div class="col-4">
-          <label for="inputCity" class="form-label"
-            >Municipio<i
-              class="fa-solid fa-map-location-dot mx-2"
-              style="color: #1d43f2"
-            ></i
-          ></label>
-          <input type="text" class="form-control" id="inputCity" />
+        <div class="col-md-4">
+          <label for="inputCity" class="form-label">
+            Municipio
+            <i class="fas fa-map-marker-alt" style="color: #1d43f2"></i>
+          </label>
+          <input type="text" class="form-control" id="inputCity" required />
         </div>
-        <div class="col-6">
-          <label for="inputState" class="form-label"
-            >Colonia<i class="fa-solid fa-location-arrow mx-2" style="color: #1d43f2;"></i></label>
-          <select id="inputState" class="form-select">
-            <option selected>Elegir colonia</option>
-            <option>...</option>
-          </select>
-        </div>
-        <div class="col-6">
-          <label for="inputZip" class="form-label">Codigo Postal<i class="fa-solid fa-envelopes-bulk mx-2" style="color: #1d43f2;"></i></label>
-          <input type="text" class="form-control" id="inputZip" />
-        </div>
-
-        <div class="col-12">
-          <a type="submit" class="btn btn-primary mt-4 mb-4"
-            >Cambiar contraseña y Usuario <i class="fa-solid fa-lock mx-2" style="color: #ffffff;"></i></a
-          >
-        </div>
-        <div class="col-12">
-          <button type="submit" class="btn btn-primary">Enviar</button>
-        </div>
-      </form>
+        <div class="col-md-6">
+          <label for="inputSuburb" class="form-label">
+            Colonia
+            <i class="fas fa-location-arrow" style="color: #1d43f2"></i>
+            </label>
+                  <input type="text" class="form-control" id="inputSuburb" required />
+                      </div>
+    <div class="col-md-6">
+      <label for="inputAddress" class="form-label">
+        Dirección
+        <i class="fas fa-map-marked-alt" style="color: #1d43f2"></i>
+      </label>
+      <input type="text" class="form-control" id="inputAddress" required />
     </div>
-    <FooterComponent />
-  </div>
+    <div class="col-md-12">
+      <button type="submit" class="btn btn-primary">
+        Guardar
+      </button>
+    </div>
+  </form>
+</div>
+</div>
 </template>
+
+
 
 <script>
 import NavComponent from "@/components/NavComponent.vue";
