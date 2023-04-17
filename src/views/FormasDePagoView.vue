@@ -101,11 +101,7 @@
 <!------------------------------------------------->
 <section class="drop">
 <div class="dropdown-center mt-5">
-<button
-                 class="btn btn-white dropdown-toggle"
-                 type="button"
-                 data-bs-toggle="dropdown"
-                 aria-expanded="false">
+<button class="btn btn-white dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
 <i class="fas fa-ticket-alt"></i>
 Ingresar un cupon de descuento
 </button>
@@ -119,8 +115,7 @@ Ingresar un cupon de descuento
 </div>
 <!-- pago -->
 
-php
-Copy code
+
       </div>
     </div>
   </div>
