@@ -1,3 +1,5 @@
+/* eslint vue/multi-word-component-names: 0 */
+
 import { createRouter, createWebHistory } from "vue-router";
 import store from "@/store";
 import axios from "axios";
@@ -9,6 +11,8 @@ import SubirIneView from "@/views/SubirIneView";
 import FormasDePagoView from "@/views/FormasDePagoView";
 import DatosGeneralesView from "@/views/DatosGeneralesView";
 import AnuncioView from "@/views/AnuncioView";
+import UserLogin from "@/views/UserLogin";
+
 
 const routes = [
   {
@@ -16,6 +20,11 @@ const routes = [
     name: "home",
     component: HomeView,
     meta: { allowedRoles: ["admin", "regular"] },
+  },
+  {
+    path: "/ui/UserLogin",
+    name: "UserLogin",
+    component: UserLogin,
   },
   {
     path: "/ui/ine",

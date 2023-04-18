@@ -13,7 +13,6 @@
     </div>
   </div>
 </template>
-
 <script>
 import { collapsed, toggleSidebar, sidebarWidth, abre, cierra } from './state';
 import SidebarLinks from './SidebarLinks.vue';
@@ -36,59 +35,67 @@ export default{
   },
 }
 </script>
-
 <style>
 :root {
-  --sidebar-bg-color: rgba(29, 76, 242,1.0);
-  --sidebar-item-hover: rgba(30, 144, 255,0.400
-  );
-  --sidebar-item-active: rgba(30, 144, 255,0.400);
+  --sidebar-bg-color: #2a2c39;
+  --sidebar-item-hover: rgba(255, 255, 255, 0.2);
+  --sidebar-item-active: rgba(255, 255, 255, 0.3);
 }
-</style>
-
-<style scoped>
 
 .sidebar{
-  color: rgb(13, 25, 189);
+  color: #fff;
   background-color: var(--sidebar-bg-color);
-
-  float: left;
-  z-index: 0;
-  top: 0;
-  left: 0;
-  overflow-y: auto;
-  height: 100%;
-  min-height: 600px;
   position: fixed;
-  top: 6.3em;
-  left:0;
-
-  transition: 0.3s;
-
-  /*display: flex;
-  flex-direction: column;*/
-  align-items: center;
-  margin: auto;
+  top: 60px;
+  left: 0;
+  bottom: 0;
+  width: 200px;
+  transition: width 0.3s ease-in-out;
+  overflow-y: auto;
 }
 
 .sidebar2{
-  position: fixed;
-  top: 16em;
+  padding-top: 2rem;
+  padding-bottom: 2rem;
 }
 
-.collapse-icon{
-  position: absolute;
-  bottom: 0;
-  left: .5em;
-  padding: 0.75em;
-
-  color: rgb(43, 17, 189);
-
-  transition: 0.2s linear;
+.sidebar-link{
+  display: flex;
+  align-items: center;
+  padding: 0.75rem 1rem;
+  color: #fff;
+  transition: background-color 0.2s ease-in-out;
+  text-decoration: none;
+  font-size: 0.9rem;
 }
 
-.rotate-180{
-  transform: rotate(180deg);
-  transition: 0.2s linear;
+.sidebar-link:hover{
+  background-color: var(--sidebar-item-hover);
+}
+
+.sidebar-link.active{
+  background-color: var(--sidebar-item-active);
+}
+
+.sidebar-icon{
+  font-size: 1.2rem;
+  margin-right: 1rem;
+}
+
+.sidebar-label{
+  margin: 0;
+  font-size: 1rem;
+}
+
+@media(max-width: 991.98px) {
+  .sidebar {
+    width: 60px;
+  }
+  .sidebar-label{
+    display: none;
+  }
+  .sidebar-icon{
+    margin-right: 0;
+  }
 }
 </style>
